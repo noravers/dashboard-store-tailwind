@@ -3,10 +3,11 @@ import { RiHome2Line, RiSettings5Fill, RiLogoutBoxRLine, RiNotification2Line, Ri
 import { FaCircleNotch, FaChartPie, FaBell } from "react-icons/fa";
 
 
-function Sidebar() {
+function Sidebar(props) {
+    const { showMenu } = props
   return (
-    <div className='bg-[#1f1d2b] fixed left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl
-     rounded-br-xl z-50 -left-full'>
+    <div className={`bg-[#1f1d2b] transitions-all fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between py-6 rounded-tr-xl
+     rounded-br-xl z-50 ${showMenu ? "left-0":"-left-full" } `}>
         <div>
             <ul className='pl-4'>
                 <li className='p-4 mb-3'>
