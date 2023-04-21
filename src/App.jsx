@@ -36,7 +36,9 @@ function App() {
     </nav>
     <main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8'>
       <div className='lg:col-span-6 p-2'>
+        {/* Header */}
         <header className=''>
+          {/* Title & Search */}
           <div className='flex flex-col gap-4'>
             <div className="">
               <h1 className='text-2xl text-gray-300'>Jeager Resto</h1>
@@ -47,6 +49,21 @@ function App() {
               <input type="text" placeholder='Search for food, cofee, etc' className='bg-[#1f1d2b] w-full py-2 pr-4 pl-10 rounded-lg text-gray-300 outline-none' />
             </form>
           </div>
+          {/* Tabs */}
+          <nav className='text-gray-300 flex items-center justify-between border-b'>
+            <a 
+              href="#" 
+              className='relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-[#eb7b69] before:left-0 before:rounded-full before:-bottom-[1px] text-[#eb7b69]'>Hot dishes</a>
+            <a 
+              href="#" 
+              className=''>Cold Dishes</a>
+            <a 
+              href="#" 
+              className=''>Soup</a>
+            <a 
+              href="#" 
+              className=''>Grill</a>
+          </nav>
 
         </header>
      </div>
