@@ -1,4 +1,4 @@
-import {RiMenu3Fill, RiUser3Line, RiAddFill, RiPieChartLine, RiCloseLine, RiSearchLine} from 'react-icons/ri'
+import {RiMenu3Fill, RiUser3Line, RiAddFill, RiPieChartLine, RiCloseLine, RiSearchLine, RiArrowDownSLine} from 'react-icons/ri'
 import Sidebar from "./components/shared/Sidebar"
 
 import { useState } from 'react'
@@ -39,18 +39,22 @@ function App() {
         {/* Header */}
         <header className=''>
           {/* Title & Search */}
-          <div className='flex flex-col gap-4'>
+          <div className='flex flex-col gap-4 md:flex-row md:justify-between md:items-center'>
             <div className="">
               <h1 className='text-2xl text-gray-300'>Jeager Resto</h1>
               <p className='text-gray-500'>April 20th 2023</p>
             </div>
-            <form className='w-full relative'>
+            <form>
+              <div className='relative w-full'></div>
               <RiSearchLine className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-300'/>
-              <input type="text" placeholder='Search for food, cofee, etc' className='bg-[#1f1d2b] w-full py-2 pr-4 pl-10 rounded-lg text-gray-300 outline-none' />
+              <input 
+                type="text" 
+                placeholder='Search for food, cofee, etc' 
+                className='bg-[#1f1d2b] w-full py-2 pr-4 pl-10 rounded-lg text-gray-300 outline-none' />
             </form>
           </div>
           {/* Tabs */}
-          <nav className='text-gray-300 flex items-center justify-between border-b'>
+          <nav className='text-gray-300 flex items-center justify-between border-b mb-7 px-4'>
             <a 
               href="#" 
               className='relative py-2 pr-4 before:bg-[#eb7b69] before:absolute before:w-1/2 before:h-1 before:left-0 before:rounded-full before:-bottom-[1px] text-[#eb7b69]'>Hot dishes</a>
@@ -64,6 +68,12 @@ function App() {
               href="#" 
               className=''>Grill</a>
           </nav>
+          <div className='flex items-center justify-between'>
+            <h2 className='text-xl text-gray-300'>Choose Dishes</h2>
+            <button className='flex items-center gap-4 text-gray-300 bg-[#1f1d2b] py-2 px-4 rounded-lg'>
+                <RiArrowDownSLine/> Dine in
+            </button>
+          </div>
 
         </header>
      </div>
