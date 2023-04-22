@@ -53,7 +53,7 @@ function App() {
           <nav className='text-gray-300 flex items-center justify-between border-b'>
             <a 
               href="#" 
-              className='relative py-2 pr-4 before:w-1/2 before:h-1 before:absolute before:bg-[#eb7b69] before:left-0 before:rounded-full before:-bottom-[1px] text-[#eb7b69]'>Hot dishes</a>
+              className='relative py-2 pr-4 before:bg-[#eb7b69] before:absolute before:w-1/2 before:h-1 before:left-0 before:rounded-full before:-bottom-[1px] text-[#eb7b69]'>Hot dishes</a>
             <a 
               href="#" 
               className=''>Cold Dishes</a>
