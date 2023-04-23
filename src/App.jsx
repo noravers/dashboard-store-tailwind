@@ -74,6 +74,9 @@ function App() {
                 <RiArrowDownSLine/> Dine in
             </button>
           </div>
+          <nav>
+            Cart
+          </nav>
 
         </header>
      </div>
