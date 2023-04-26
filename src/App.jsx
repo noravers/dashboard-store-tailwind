@@ -34,8 +34,8 @@ function App() {
         }
           </button>
     </nav>
-    <main className='lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-2'>
-      <div className='lg:col-span-6 p-2'>
+    <main className='lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-16'>
+      <div className='lg:col-span-6 md:p-8'>
         {/* Header */}
         <header className=''>
           {/* Title & Search */}
@@ -76,7 +76,7 @@ function App() {
             </button>
           </div>
           {/* Content */}
-          <div className='p-8'>
+          <div className='p-8 grid  grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3'>
           {/* Card   */}
             <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
               <img 
@@ -87,10 +87,87 @@ function App() {
               <span className='text-gray-400'>$2.29</span>
               <p className='text-gray-600'>20 bowls available</p>
             </div>
-          </div> 
-        
-          
-
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+            {/* Card   */}
+            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
+              <img 
+                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
+                src="comida.png" 
+                alt="" />
+              <p className='text-xl'>Spicy seasoned safefood noodles</p>
+              <span className='text-gray-400'>$2.29</span>
+              <p className='text-gray-600'>20 bowls available</p>
+            </div>
+          </div>
         </header>
      </div>
       <div className='bg-red-100 lg:col-span-2 fixed right-0 lg:static'>Carrito</div>
