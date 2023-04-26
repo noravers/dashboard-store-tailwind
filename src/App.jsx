@@ -170,7 +170,24 @@ function App() {
           </div>
         </header>
      </div>
-      <div className='bg-red-100 lg:col-span-2 fixed right-0 lg:static'>Carrito</div>
+      <div className='lg:col-span-2 fixed right-0 lg:static top-0 bg-[#1f1d2b] w-full h-full'>
+        {/* Orders */}
+        <div className='relative text-gray-300 pt-20 p-8'>
+          <RiCloseLine className='absolute left-4 top-4 p-3 box-content text-gray-300 rounded-full bg-[#242836] text-xl'/>          {/* </span> */}
+          <h1 className='text-2xl my-4'>Orders #23445</h1>
+          <div className='flex items-center gap-4 flex-wrap'>
+            <button className='py-2 px-4 rounded-xl bg-[#eb7b69] text-white'>
+              Dine In
+            </button>
+            <button className='py-2 px-4 rounded-xl text-[#eb7b69] border border-gray-500'>
+              To Go
+            </button>
+            <button className='py-2 px-4 rounded-xl text-[#eb7b69] border border-gray-500'>
+              Delivery
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
    </div>
   )
