@@ -1,4 +1,4 @@
-import {RiMenu3Fill, RiUser3Line, RiAddFill, RiPieChartLine, RiCloseLine, RiSearchLine, RiArrowDownSLine} from 'react-icons/ri'
+import {RiMenu3Fill, RiUser3Line, RiAddFill, RiPieChartLine, RiCloseLine, RiSearchLine, RiArrowDownSLine, RiDeleteBin6Line} from 'react-icons/ri'
 import Sidebar from "./components/shared/Sidebar"
 
 import { useState } from 'react'
@@ -172,7 +172,7 @@ function App() {
      </div>
       <div className='lg:col-span-2 fixed right-0 lg:static top-0 bg-[#1f1d2b] w-full h-full'>
         {/* Orders */}
-        <div className='relative text-gray-300 pt-20 p-8'>
+        <div className='relative text-gray-300 pt-20 p-8 h-full'>
           <RiCloseLine className='absolute left-4 top-4 p-3 box-content text-gray-300 rounded-full bg-[#242836] text-xl'/>          {/* </span> */}
           <h1 className='text-2xl my-4'>Orders #23445</h1>
           {/* Chips */}
@@ -191,18 +191,18 @@ function App() {
           <div>
             <div className='grid grid-cols-6 mb-4 px-4'>
               <h5 className='col-span-4'>Item</h5>
-              <h5 className=''>Price</h5>
               <h5 className=''>Qty</h5>
+              <h5 className=''>Price</h5>
             </div>
             {/* Product */}
             <div className='bg-[#242836] p-4 rounded-xl'>
-              <div className='grid grid-cols-6'>
+              <div className='grid grid-cols-6 mb-4'>
                 {/* Product Description */}
                 <div className='col-span-4 flex items-center gap-3'>
                   <img 
                     src="comida.png" 
                     alt=""
-                    className='w-10 h-10'
+                    className='w-10 h-10 object-cover'
                    />
                   <div>
                     <h5 className='text-sm'>Spicy seasoned sea...</h5>
@@ -216,7 +216,32 @@ function App() {
                   <span>$4.67</span>
                 </div>
               </div>
+              {/* Note */}
+              <div className='flex gap-6 items-center'>
+                <form className=''>
+                  <input 
+                    type="text" 
+                    placeholder='Order note...' 
+                    className='bg-[#1f1d2b] py-2 px-5 rounded-md outline-none'/>
+                </form>
+                <div className=''>
+                  <button className='border p-2 border-red-500 rounded-md'>
+                    <RiDeleteBin6Line className='text-red-500'/>
+                  </button>
+                </div>
+              </div>
              
+            </div>
+          </div>
+          {/* Submit payment */}
+          <div className='absolute bottom-0 left-0 p-4 w-full bg-[#242836]'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='text-gray-500'>Discount</span>
+              <span>$0</span>
+            </div>
+            <div className='flex items-center justify-between'>
+              <span className='text-gray-500'>Subtotal</span>
+              <span>$201.03</span>
             </div>
           </div>
           
