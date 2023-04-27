@@ -172,7 +172,7 @@ function App() {
      </div>
       <div className='lg:col-span-2 fixed right-0 lg:static top-0 bg-[#1f1d2b] w-full h-full pb-40'>
         {/* Orders */}
-        <div className='relative text-gray-300 pt-20 p-8 h-full overflow-y-scroll bg-red-400'>
+        <div className='relative text-gray-300 pt-20 p-8 h-full overflow-y-scroll'>
           <RiCloseLine className='absolute left-4 top-4 p-3 box-content text-gray-300 rounded-full bg-[#242836] text-xl'/>          {/* </span> */}
           <h1 className='text-2xl my-4'>Orders #23445</h1>
           {/* Chips */}
@@ -383,7 +383,7 @@ function App() {
             
           </div>
           {/* Submit payment */}
-          <div className='fixed bottom-0 left-0 p-4 w-full bg-[#242836]'>
+          <div className='absolute bottom-0 left-0 p-4 w-full bg-[#242836]'>
             <div className='flex items-center justify-between mb-4'>
               <span className='text-gray-500'>Discount</span>
               <span>$0</span>
