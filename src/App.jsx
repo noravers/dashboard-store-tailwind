@@ -239,9 +239,14 @@ function App() {
               <span className='text-gray-500'>Discount</span>
               <span>$0</span>
             </div>
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between mb-6'>
               <span className='text-gray-500'>Subtotal</span>
               <span>$201.03</span>
+            </div>
+            <div>
+              <button className='bg-[#eb7b69] w-full py-2 px-4 rounded-lg'>
+                Continue to payment
+              </button>
             </div>
           </div>
           
