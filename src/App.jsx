@@ -12,6 +12,7 @@ function App() {
   }
   const toggleOrder = () => {
     setShowOrder(!showOrder)
+    setShowMenu(false)
   }
   return (
    <div className='bg-[#242836] w-full min-h-screen'>
@@ -84,7 +85,7 @@ function App() {
                 src="comida.png" 
                 alt="" />
               <p className='text-xl'>Spicy seasoned safefood noodles</p>
-              <span className='text-gray-400'>$2.29</span>
+              <span className='text-gray-400 mt-2'>$2.29</span>
               <p className='text-gray-600'>20 bowls available</p>
             </div>
             {/* Card   */}
@@ -104,7 +105,7 @@ function App() {
                 src="comida.png" 
                 alt="" />
               <p className='text-xl'>Spicy seasoned safefood noodles</p>
-              <span className='text-gray-400'>$2.29</span>
+              <span className='text-gray-400 mt-2'>$2.29</span>
               <p className='text-gray-600'>20 bowls available</p>
             </div>
             {/* Card   */}
@@ -114,7 +115,7 @@ function App() {
                 src="comida.png" 
                 alt="" />
               <p className='text-xl'>Spicy seasoned safefood noodles</p>
-              <span className='text-gray-400'>$2.29</span>
+              <span className='text-gray-400 mt-2'>$2.29</span>
               <p className='text-gray-600'>20 bowls available</p>
             </div>
             {/* Card   */}
@@ -173,7 +174,7 @@ function App() {
      {/* Condition Orders */}
       <div className={`lg:col-span-2 fixed lg:static top-0 bg-[#1f1d2b] w-full h-full transition-all ${showOrder ? 'right-0' : '-right-full'}` }>
         {/* Orders */}
-        <div className='relative text-gray-300 pt-20 p-8 h-full'>
+        <div className='relative text-gray-300 pt-20 p-8 lg:p-4 lg:pt-16 h-full'>
           <RiCloseLine onClick={toggleOrder} className='absolute left-4 top-4 p-3 box-content text-gray-300 rounded-full bg-[#242836] text-xl'/>          {/* </span> */}
           <h1 className='text-2xl my-4'>Orders #23445</h1>
           {/* Chips */}
@@ -189,14 +190,14 @@ function App() {
             </button>
           </div>
           {/* Cart */}
-          <div>
-            <div className='grid grid-cols-6 mb-4 px-4'>
+          <div className=''>
+            <div className='grid grid-cols-6 mb-4 px-4 mr-2'>
               <h5 className='col-span-4'>Item</h5>
               <h5 className=''>Qty</h5>
               <h5 className=''>Price</h5>
             </div>
             {/* Products */}
-            <div className='h-[400px] overflow-scroll'>
+            <div className='h-[400px] md:h-[800px] lg:h-[550px] overflow-scroll lg:scrollbar-thin lg:scrollbar-thumb-black lg:scrollbar-track-black overflow-x-hidden'>
               {/* Product */}
               <div className='bg-[#242836] p-4 rounded-xl mb-4'>
                 <div className='grid grid-cols-6 mb-4'>
@@ -209,7 +210,7 @@ function App() {
                     />
                     <div>
                       <h5 className='text-sm'>Spicy seasoned sea...</h5>
-                      <p className='text-xs text-gray-500'>$2.29</p>
+                      <p className='text-xs text-gray-500 mt-2'>$2.29</p>
                     </div>
                   </div>
                   <div >
@@ -220,8 +221,8 @@ function App() {
                   </div>
                 </div>
                 {/* Note */}
-                <div className='flex gap-6 items-center'>
-                  <form className=''>
+                <div className='grid grid-cols-6 items-center'>
+                  <form className='col-span-5'>
                     <input 
                       type="text" 
                       placeholder='Order note...' 
@@ -246,7 +247,7 @@ function App() {
                     />
                     <div>
                       <h5 className='text-sm'>Spicy seasoned sea...</h5>
-                      <p className='text-xs text-gray-500'>$2.29</p>
+                      <p className='text-xs text-gray-500 mt-2'>$2.29</p>
                     </div>
                   </div>
                   <div >
@@ -257,8 +258,8 @@ function App() {
                   </div>
                 </div>
                 {/* Note */}
-                <div className='flex gap-6 items-center'>
-                  <form className=''>
+                <div className='grid grid-cols-6 items-center'>
+                  <form className='col-span-5'>
                     <input 
                       type="text" 
                       placeholder='Order note...' 
@@ -283,7 +284,7 @@ function App() {
                     />
                     <div>
                       <h5 className='text-sm'>Spicy seasoned sea...</h5>
-                      <p className='text-xs text-gray-500'>$2.29</p>
+                      <p className='text-xs text-gray-500 mt-2'>$2.29</p>
                     </div>
                   </div>
                   <div >
@@ -294,8 +295,8 @@ function App() {
                   </div>
                 </div>
                 {/* Note */}
-                <div className='flex gap-6 items-center'>
-                  <form className=''>
+                <div className='grid grid-cols-6 items-center'>
+                  <form className='col-span-5'>
                     <input 
                       type="text" 
                       placeholder='Order note...' 
@@ -320,7 +321,7 @@ function App() {
                     />
                     <div>
                       <h5 className='text-sm'>Spicy seasoned sea...</h5>
-                      <p className='text-xs text-gray-500'>$2.29</p>
+                      <p className='text-xs text-gray-500 mt-2'>$2.29</p>
                     </div>
                   </div>
                   <div >
@@ -331,8 +332,8 @@ function App() {
                   </div>
                 </div>
                 {/* Note */}
-                <div className='flex gap-6 items-center'>
-                  <form className=''>
+                <div className='grid grid-cols-6 items-center'>
+                  <form className='col-span-5'>
                     <input 
                       type="text" 
                       placeholder='Order note...' 
