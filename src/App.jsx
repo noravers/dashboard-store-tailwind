@@ -35,10 +35,10 @@ function App() {
         }
           </button>
     </nav>
-    <main className='lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-16'>
-      <div className='lg:col-span-6 md:p-8'>
+    <main className='lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 lg:pt-0 lg:pr-0 pb-16'>
+      <div className='lg:col-span-6 md:p-8 p-4'>
         {/* Header */}
-        <header className=''>
+        <header className='p-8'>
           {/* Title & Search */}
           <div className='flex flex-col gap-4 md:flex-row md:justify-between md:items-center'>
             <div className="">
@@ -138,44 +138,14 @@ function App() {
               <span className='text-gray-400'>$2.29</span>
               <p className='text-gray-600'>20 bowls available</p>
             </div>
-            {/* Card   */}
-            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
-              <img 
-                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
-                src="comida.png" 
-                alt="" />
-              <p className='text-xl'>Spicy seasoned safefood noodles</p>
-              <span className='text-gray-400'>$2.29</span>
-              <p className='text-gray-600'>20 bowls available</p>
-            </div>
-            {/* Card   */}
-            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
-              <img 
-                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
-                src="comida.png" 
-                alt="" />
-              <p className='text-xl'>Spicy seasoned safefood noodles</p>
-              <span className='text-gray-400'>$2.29</span>
-              <p className='text-gray-600'>20 bowls available</p>
-            </div>
-            {/* Card   */}
-            <div className='bg-[#1f1d2b] p-10 rounded-xl flex flex-col items-center gap-2 text-gray-300 text-center'>
-              <img 
-                className='w-40 h-40  object-cover -mt-20 shadow-2xl rounded-full' 
-                src="comida.png" 
-                alt="" />
-              <p className='text-xl'>Spicy seasoned safefood noodles</p>
-              <span className='text-gray-400'>$2.29</span>
-              <p className='text-gray-600'>20 bowls available</p>
-            </div>
           </div>
         </header>
      </div>
      {/* Condition Orders */}
-      <div className={`lg:col-span-2 fixed lg:static top-0 bg-[#1f1d2b] w-full h-full transition-all ${showOrder ? 'right-0' : '-right-full'}` }>
+      <div className={`lg:col-span-2 fixed lg:w-96 lg:right-0 top-0 bg-[#1f1d2b] w-full h-full transition-all ${showOrder ? 'right-0' : '-right-full'}` }>
         {/* Orders */}
-        <div className='relative text-gray-300 pt-20 p-8 lg:p-4 lg:pt-16 h-full'>
-          <RiCloseLine onClick={toggleOrder} className='absolute left-4 top-4 p-3 box-content text-gray-300 rounded-full bg-[#242836] text-xl'/>          {/* </span> */}
+        <div className='relative text-gray-300 pt-20 p-8 lg:p-4 h-full'>
+          <RiCloseLine onClick={toggleOrder} className='lg:hidden absolute left-4 top-4 p-3 box-content text-gray-300 rounded-full bg-[#242836] text-xl'/>          {/* </span> */}
           <h1 className='text-2xl my-4'>Orders #23445</h1>
           {/* Chips */}
           <div className='flex items-center gap-4 flex-wrap mb-8'>
@@ -311,6 +281,43 @@ function App() {
               
               </div>
               <div className='bg-[#242836] p-4 rounded-xl mb-4'>
+                <div className='grid grid-cols-6 mb-4'>
+                  {/* Product Description */}
+                  <div className='col-span-4 flex items-center gap-3'>
+                    <img 
+                      src="comida.png" 
+                      alt=""
+                      className='w-10 h-10 object-cover'
+                    />
+                    <div>
+                      <h5 className='text-sm'>Spicy seasoned sea...</h5>
+                      <p className='text-xs text-gray-500 mt-2'>$2.29</p>
+                    </div>
+                  </div>
+                  <div >
+                    <span>2</span>
+                  </div>
+                  <div >
+                    <span>$4.67</span>
+                  </div>
+                </div>
+                {/* Note */}
+                <div className='grid grid-cols-6 items-center'>
+                  <form className='col-span-5'>
+                    <input 
+                      type="text" 
+                      placeholder='Order note...' 
+                      className='bg-[#1f1d2b] py-2 px-5 rounded-md outline-none'/>
+                  </form>
+                  <div className=''>
+                    <button className='border p-2 border-red-500 rounded-md'>
+                      <RiDeleteBin6Line className='text-red-500'/>
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+              <div className='bg-[#242836] p-4 rounded-xl mb-8'>
                 <div className='grid grid-cols-6 mb-4'>
                   {/* Product Description */}
                   <div className='col-span-4 flex items-center gap-3'>
