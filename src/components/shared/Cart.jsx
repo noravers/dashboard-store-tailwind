@@ -3,7 +3,7 @@ import {RiCloseLine, RiDeleteBin6Line} from 'react-icons/ri'
 
 
 
-function Card(props) {
+function Cart(props) {
 const { showOrder, toggleOrder} = props
   return (
     <div className={`lg:col-span-2 fixed lg:w-96 lg:right-0 top-0 bg-[#1f1d2b] w-full h-full transition-all z-50 ${showOrder ? 'right-0' : '-right-full'}` }>
@@ -31,7 +31,7 @@ const { showOrder, toggleOrder} = props
               <h5 className=''>Price</h5>
             </div>
             {/* Products */}
-            <div className='h-[400px] md:h-[800px] lg:h-[550px] overflow-scroll lg:scrollbar-thin lg:scrollbar-thumb-black lg:scrollbar-track-black overflow-x-hidden'>
+            <div className='h-[400px] md:h-[800px] lg:h-[400px] overflow-scroll lg:scrollbar-thin lg:scrollbar-thumb-black lg:scrollbar-track-black overflow-x-hidden'>
               {/* Product */}
               <div className='bg-[#242836] p-4 rounded-xl mb-4'>
                 <div className='grid grid-cols-6 mb-4'>
@@ -243,4 +243,4 @@ const { showOrder, toggleOrder} = props
   )
 }
 
-export default Card
+export default Cart

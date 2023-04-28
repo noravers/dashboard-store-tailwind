@@ -2,7 +2,7 @@ import {RiMenu3Fill, RiUser3Line, RiAddFill, RiPieChartLine, RiCloseLine, RiSear
 import Sidebar from "./components/shared/Sidebar"
 
 import { useState } from 'react'
-import Card from './components/shared/Card'
+import Cart from './components/shared/Cart'
 import Header from './components/shared/Header'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
     <main className='lg:pl-32 pb-16 lg:pr-96'>
       <Header/>      
       {/* Condition Orders */}
-      <Card toggleOrder={toggleOrder} showOrder={showOrder}/>
+      <Cart toggleOrder={toggleOrder} showOrder={showOrder}/>
       
     </main>
    </div>
